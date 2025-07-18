@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About UniSpace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">   
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #203148;
+      color: #f5f5f5;
+    }
+
+    header {
+      background-color: #34495e;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 1.5px;
+      text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.25);
+    }
+
+    .main_nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .main_nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .main_nav a:hover {
+      background-color: rgba(255, 250, 250, 0.86);
+      color: #34495e;
+    }
+
+    .about_section {
+      padding: 3rem 2rem;
+      background-color: #203148;
+      text-align: center;
+    }
+
+    .about_section h2 {
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+      color: rgba(235, 235, 235, 0.96);
+    }
+
+    .about_section p {
+      font-size: 1.1rem;
+      max-width: 900px;
+      margin: 0 auto 2rem;
+      line-height: 1.7;
+      color: #f0f0f0;
+    }
+
+    .about_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 2.5rem auto;
+    }
+
+    .about_card {
+      background:rgba(255, 250, 250, 0.92);
+      padding: 2rem;
+      border-radius: 15px;
+      color: #203148;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      border-left: 8px solid rgba(72, 102, 130, 0.92);
+      transition: transform 0.3s ease;
+    }
+
+    .about_card:hover {
+      transform: scale(1.02);
+    }
+
+    .about_card h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .about_card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #203148;
+    }
+
+    .services_section {
+  padding: 4rem 2rem;
+  background-color: #1c2a3a;
+  text-align: center;
+}
+
+.services_title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+.services_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service_card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(6px);
+  color: #e8e8e8;
+  border-left: 5px solid #4e92cd;
+  text-align: left;
+}
+
+.service_card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.service_card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #d2d2d2;
+}
+
+.service_card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+
+
+    footer {
+      background-color: #34495e;
+      text-align: center;
+      padding: 1.2rem;
+      margin-top: 4rem;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .about_section h2, #services_title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ClassHub</div>
+    <nav class="main_nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="classroom.html">Classrooms</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.php">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <section class="about_section">
+    <h2>About ClassHub</h2>
+    <p>ClassHub is a smart classroom booking system designed specifically for university students and staff. Our platform streamlines the process of reserving campus classrooms, ensuring efficient use of academic spaces and improving overall campus organization.</p>
+    
+    <div class="about_grid">
+        <div class="about_card">
+        <h3>Our Mission</h3>
+        <p>To make classroom management seamless by providing a convenient, reliable, and transparent booking system for students and educators.</p>
+        </div>
+        
+        <div class="about_card">
+        <h3>Why ClassHub?</h3>
+        <p>Managing room availability manually is time-consuming. ClassHub automates the booking process, reduces scheduling conflicts, and ensures students can find suitable learning spaces with ease.</p>
+        </div>
+        
+        <div class="about_card">
+        <h3>Our Values</h3>
+        <p>Efficiency, accessibility, user-centered design, and smart campus solutions. We believe technology should simplify daily academic life.</p>
+        </div>
+    </div>
+    </section>
+
+
+<section class="services_section">
+  <h2 class="services_title">Our Services</h2>
+  <div class="services_grid">
+    <div class="service_card">
+      <h4>Real-Time Availability</h4>
+      <p>Check which classrooms are open for booking instantly</p>
+    </div>
+    <div class="service_card">
+      <h4>Easy Booking & Confirmation</h4>
+      <p>Reserve classrooms quickly and receive instant confirmation</p>
+    </div>
+    <div class="service_card">
+      <h4>Administrator Control</h4>
+      <p>Manage, approve, or deny reservations to ensure fair usage</p>
+    </div>
+    <div class="service_card">
+      <h4>Flexible Scheduling</h4>
+      <p>Book rooms for lectures, meetings, study sessions, and events</p>
+    </div>
+    <div class="service_card">
+      <h4>Optimized Utilization</h4>
+      <p>Reduce scheduling conflicts and maximize space usage</p>
+    </div>
+    <div class="service_card">
+      <h4>Secure & Restricted Access</h4>
+      <p>Only ClassHub members can make classroom reservations</p>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    &copy; 2025 UniSpace. All rights reserved.
+  </footer>
+</body>
+</html>
+
+
