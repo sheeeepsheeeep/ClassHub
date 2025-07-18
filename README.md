@@ -1,4 +1,4 @@
-# ClassHub - Sprint 3 Report
+# ClassHub Report
 
 Tasks Completed: 
 We created the booking history and admin management pages, added error handling, fixed interface issues, completed the final branch strategy, conducted full system testing, finalized the presentation slides, and documented the Sprint 3 planning notes. 
